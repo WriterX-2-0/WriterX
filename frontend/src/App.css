@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rambla:wght@700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@500&display=swap');
 
 .App {
   text-align: center;
@@ -16,13 +17,15 @@
 /* WELCOME *//* WELCOME *//* WELCOME *//* WELCOME *//* WELCOME */
 #welcomePage{
   font-family: Share Tech Mono;
-  color: whitesmoke
+  color: whitesmoke;
+  background: #1e1e1e;
 }
+
 .header {
   height: 100px;
   display: flex;
   justify-content: center;
-  background-color: rgba(28, 106, 207, 1);
+  background-color: #4b4ab2;
   color: white;
   flex-direction: column;
   align-items: flex-start;
@@ -30,10 +33,11 @@
 }
 .header > h1 {
   font-size: 4em;
-  text-shadow: 3px 3px black;
+  text-shadow: 3px 3px #1e1e1e;
+  color: whitesmoke;
 }
 .writerLogo{
-  color: rgb(74, 54, 255);
+  color: #4b4ab2;
 }
 .body {
   margin: 250px;;
@@ -50,7 +54,7 @@
   color: white;
 }
 .cb1 {
-  background-color: #4980fc;
+  background-color: #b8b8e1;
   height: 550px;
   display: flex;
   align-items: center;
@@ -58,7 +62,7 @@
   color: whitesmoke;
 }
 .cb2 {
-  background-color: #181a1b;
+  background-color: #cecece;
   height: 400px;
   display: flex;
   padding-left: 166px;
@@ -66,7 +70,7 @@
   color: whitesmoke;
 }
 .cb3 {
-  background-color: #202224;
+  background-color: #b8b8e1;
   height: 400px;
   display: flex;
   align-items: center;
@@ -75,13 +79,14 @@
   color: whitesmoke;
 }
 .cb4 {
-  background-color: #181a1b;
+  background-color: #cecece;
   height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: whitesmoke;
+  background: #1e1e1e;
 }
 .description {
   margin: auto;
@@ -105,7 +110,7 @@ p.description
 }
 footer {
   height: 100px;
-  background-color: rgba(28, 106, 207, 1);
+  background-color: #4b4ab2;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -131,8 +136,13 @@ footer {
 button.Google-Login {
   margin-top: 20px;
 }
+
+/* button.Google-Login span {
+  background: #cecece;
+} */
+
 .sideBarCol-2{
-  background: #0e0e10fd;
+  background: #34337b;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -146,7 +156,7 @@ button.Google-Login {
   color: whitesmoke;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 150px;
+  width: 185px;
   display: block;
   overflow: hidden;
 }
@@ -160,7 +170,7 @@ button.Google-Login {
 }
 
 .hubMain {
-  color: #181a1b;
+  color: #1E1E1E;
   font-weight: bold;
 }
 .btn-group-vertical>.btn, .btn-group>.btn {
@@ -172,7 +182,7 @@ button.Google-Login {
 #hub{
   height: 100vh;
   font-weight: bolder;
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Georama', sans-serif;
 }
 .hubMain{
     display: flex;
@@ -205,6 +215,8 @@ button.Google-Login {
   /* width: 100px; */
   display: block;
   overflow: hidden;
+  text-shadow: 3px 3px #1e1e1e;
+  font-size: 18px;
 }
 
 .btn-group-vertical>.btn, .btn-group>.btn {
@@ -212,7 +224,7 @@ button.Google-Login {
 }
 
 .btn-secondary {
-  background-color: #232e3c !important;
+  background-color: #1e1e1e !important;
   border-color: #232e3c !important;
   width: 12em;
   height: 3em;
@@ -236,13 +248,30 @@ div.dropdown-menu.show {
 
 
 .bkrd{
-  background-image: url("https://c4.wallpaperflare.com/wallpaper/46/374/498/coffee-cappuccino-cafes-rain-wallpaper-preview.jpg");
+  background-image: url("https://media.istockphoto.com/photos/blank-wide-screen-real-chalkboard-background-texture-in-college-for-picture-id1204304072?k=6&m=1204304072&s=170667a&w=0&h=TTt6KP_RmUQlV_5cJh_L4KJpEeyGr8NfwU-zKeFb8f4=");
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 35em;
   margin-bottom: -15em;
 }
+
+.bkrd h1 {
+  color: whitesmoke;
+  margin-left: 200px;
+}
+
+button.logOutButton {
+  margin-left: 200px;
+  margin-top: 15px;
+  background: #b8b8e1;
+}
+
+div.hubNovelHeader {
+  color: whitesmoke;
+  margin-left: 200px;
+}
+
 .hubNovelsSect-1{
  
 }
@@ -253,9 +282,11 @@ div.dropdown-menu.show {
   height: 20em;
   justify-content: center;
   align-items: center;
-  background: #1c1e26;  
-  margin: 0 15em;
+  background: #1e1e1e;  
+  margin-left: 300px;
+  margin-right: 100px;
   border-radius: 1em;
+  width:
 }
 
 .displayNovels::-webkit-scrollbar{
@@ -347,8 +378,8 @@ color: #fff;
   transition: .02s all ease-in;
 }
 .makeNovel{
-  background: #1b2733;
-  font-family: Share Tech Mono;
+  background: #3b3b3b;
+  font-family: 'Georama', sans-serif;
   height: 30em;
   position: relative;
   width: 50em;
@@ -380,11 +411,14 @@ color: #fff;
   justify-content: center;
 }
 .hubNotesCol-1{
-  background: #1c1e26;  
+  background: #1e1e1e;  
   width: 15em;
   height: 25em;
   overflow-y: scroll;
   overflow-x: hidden;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-left: 200px;
 }
 
 .hubNotesCol-1 > h2 {
@@ -421,16 +455,21 @@ flex-direction: column;
 }
 .hubNotesCol-2 {
   width: 25em;
-height: 25em;
-
+  height: 25em;
 }
+
+/* .hubNotesCol-2 input {
+  background: #cecece;
+} */
+
 .hubNotesCol-2 > form > textarea{
   resize: none;
   height: 23em;
+  background: #b8b8e1;
 }
 
 .eachNote{
-  background: #985454;
+  background: #b8b8e1;
   margin: 10px 0;
   padding: 5px 0;
   height: 3em;
@@ -499,7 +538,7 @@ textarea#editor{
 , .bars{
   border: 1px inset #232e3c;
   font-family: 'Gowun Batang', serif;
-  
+  min-width: 400px;
 }
 
 .showChapters a {
@@ -586,10 +625,7 @@ button #editor {
   display: flex;
   flex-direction: column;
   width: 300px;
-  margin: 20px;
-  /* font-family: inherit;
-  font-size: inherit;
-  line-height: inherit; */
+  margin: auto;
 }
 
 .bars h2{
